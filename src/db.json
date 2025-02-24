@@ -1,8 +1,20 @@
 {
+  "users": [
+    {
+      "email": "123@mail.com",
+      "password": "$2a$10$21AmIsoqSNGmXgYX2L6kQ.2JzQ.7Z4wTvOIXuRXOPI342AcBsyrvq",
+      "name": "123",
+      "gender": "male",
+      "birthday": "1999-09-09",
+      "phone": "0912345678",
+      "id": 1
+    }
+  ],
   "products": [
     {
       "id": 1,
-      "name": "樂康頤和園",
+      "name": "康樂長照中心",
+      "category": "長期照顧中心",
       "images": [
         "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-A/IntroA-01.png",
         "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
@@ -21,7 +33,7 @@
       "region": "中正區",
       "address": "台北市中正區中正路",
       "like": 5,
-      "comments": 12,
+      "comments": 15,
       "services": [
         {
           "name": "機構內門診"
@@ -37,7 +49,7 @@
         }
       ],
       "description": "本長照機構設有無障礙設施、專業護理室、康復治療室、活動娛樂區及24小時緊急呼叫系統,提供全方位的照護服務。",
-      "age": "0~59",
+      "age": "0~59 歲",
       "caringItem": [
         "鼻胃管",
         "導尿管",
@@ -62,7 +74,835 @@
         "如廁訓練",
         "延緩失能"
       ],
-      "allowance": ["老人補助（低收、中低收）", "身心障礙", "喘息服務"],
+      "allowance": [
+        "老人補助（低收、中低收）",
+        "身心障礙",
+        "喘息服務"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 2
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 1
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "幸福頤養園",
+      "category": "長期照顧中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-02.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-02.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "新北市",
+      "region": "板橋區",
+      "address": "新北市板橋區中山路",
+      "like": 6,
+      "comments": 10,
+      "services": [
+        {
+          "name": "失智照顧"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "個別化飲食"
+        }
+      ],
+      "description": "幸福頤養園致力於提供長者溫馨舒適的生活環境。我們的設施包括專業護理病房,確保長者健康;康復訓練區,幫助長者維持和提升體能。",
+      "age": "60 歲以上",
+      "caringItem": [
+        "認知障礙（失智）",
+        "氣切管",
+        "氧氣"
+      ],
+      "medicalService": [
+        "腫瘤照顧",
+        "洗腎接送",
+        "營養評估"
+      ],
+      "allowance": [
+        "喘息服務"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 2
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "安康長青之家",
+      "category": "長期照顧中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-03.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-03.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "桃園市",
+      "region": "桃園區",
+      "address": "桃園市桃園區復興路",
+      "like": 7,
+      "comments": 15,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "特殊沐浴設備"
+        },
+        {
+          "name": "大傷口照顧"
+        }
+      ],
+      "description": "安康長青之家提供全面的長期照護服務,專為長者設計。我們擁有全天候護理中心,確保長者隨時能獲得專業照顧;健康膳食區,提供營養均衡的餐點。",
+      "age": "65 歲以上",
+      "caringItem": [
+        "復健照護",
+        "腫瘤照護（癌症）",
+        "透析照護（洗腎）"
+      ],
+      "medicalService": [
+        "術後照顧",
+        "生活照顧",
+        "傷口照顧"
+      ],
+      "allowance": [
+        "老人補助（低收、中低收）"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 3
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 6
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "樂康頤和園",
+      "category": "安養中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-04.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-04.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "台北市",
+      "region": "大安區",
+      "address": "台北市大安區敦化南路",
+      "like": 9,
+      "comments": 20,
+      "services": [
+        {
+          "name": "失智照顧"
+        },
+        {
+          "name": "免外出復健"
+        },
+        {
+          "name": "個別化飲食"
+        }
+      ],
+      "description": "樂康頤和園專為銀髮族打造,提供溫馨的安養服務。我們設有舒適的居住空間,讓長者享受如家般的溫暖。",
+      "age": "60 歲以上",
+      "caringItem": [
+        "鼻胃管",
+        "導尿管",
+        "精神照護"
+      ],
+      "medicalService": [
+        "如廁訓練",
+        "延緩失能",
+        "營養評估"
+      ],
+      "allowance": [
+        "身心障礙",
+        "喘息服務"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 1
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 1
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "怡然頤養居",
+      "category": "安養中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-08.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-08.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "台中市",
+      "region": "西屯區",
+      "address": "台中市西屯區台灣大道",
+      "like": 5,
+      "comments": 15,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "特殊沐浴設備"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "免外出復健"
+        }
+      ],
+      "description": "怡然頤養居提供全方位的安養服務,讓長者安心養老。我們設有專業的護理單位,確保每位住民的健康需求得到滿足。",
+      "age": "65 歲以上",
+      "caringItem": [
+        "認知障礙（失智）",
+        "氣切管",
+        "氧氣"
+      ],
+      "medicalService": [
+        "術後照顧",
+        "生活照顧",
+        "傷口照顧"
+      ],
+      "allowance": [
+        "老人補助（低收、中低收）"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 1
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 2
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "祥和樂年苑",
+      "category": "安養中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-05.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-05.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "高雄市",
+      "region": "苓雅區",
+      "address": "高雄市苓雅區三多四路",
+      "like": 16,
+      "comments": 25,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "失智照顧"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "個別化飲食"
+        }
+      ],
+      "description": "祥和樂年苑致力於營造一個舒適、健康、快樂的安養環境。我們提供先進的護理設施,全天候照護長者的身體健康。",
+      "age": "60 歲以上",
+      "caringItem": [
+        "復健照護",
+        "腫瘤照護（癌症）",
+        "透析照護（洗腎）"
+      ],
+      "medicalService": [
+        "如廁訓練",
+        "延緩失能",
+        "營養評估"
+      ],
+      "allowance": [
+        "身心障礙"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 3
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 2
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "康福護理苑",
+      "category": "護理之家",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-07.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-07.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "台北市",
+      "region": "松山區",
+      "address": "台北市松山區南京東路",
+      "like": 8,
+      "comments": 13,
+      "services": [
+        {
+          "name": "免外出復健"
+        },
+        {
+          "name": "失智照顧"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "大傷口照顧"
+        }
+      ],
+      "description": "康福護理苑提供專業的長期護理服務,致力於守護長者的健康與生活質量。我們設有高規格的醫護照護室,全天候提供專業的醫療支援。",
+      "age": "65 歲以上",
+      "caringItem": [
+        "鼻胃管",
+        "導尿管",
+        "精神照護"
+      ],
+      "medicalService": [
+        "醫師巡診",
+        "鄰近醫院",
+        "藥師評估"
+      ],
+      "allowance": [
+        "喘息服務"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 1
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 1
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "靜怡護理家園",
+      "category": "護理之家",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-10.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-10.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "新北市",
+      "region": "三重區",
+      "address": "新北市三重區重新路",
+      "like": 17,
+      "comments": 3,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "個別化飲食"
+        },
+        {
+          "name": "免外出復健"
+        },
+        {
+          "name": "大傷口照顧"
+        }
+      ],
+      "description": "靜怡護理家園為長者提供安寧舒適的護理服務。我們擁有設備完善的病房,讓長者在安全舒適的環境中休養。",
+      "age": "60 歲以上",
+      "caringItem": [
+        "認知障礙（失智）",
+        "氣切管",
+        "氧氣"
+      ],
+      "medicalService": [
+        "腫瘤照顧",
+        "洗腎接送",
+        "營養評估"
+      ],
+      "allowance": [
+        "老人補助（低收、中低收）",
+        "身心障礙"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 3
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 6
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "頤康護理居",
+      "category": "護理之家",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-06.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-06.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "桃園市",
+      "region": "中壢區",
+      "address": "桃園市中壢區中正路",
+      "like": 3,
+      "comments": 7,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "特殊沐浴設備"
+        }
+      ],
+      "description": "頤康護理居致力於提供全方位的護理服務,讓長者享受高品質的生活。我們設有先進的醫療護理站,隨時守護長者的健康。",
+      "age": "65 歲以上",
+      "caringItem": [
+        "復健照護",
+        "腫瘤照護（癌症）",
+        "透析照護（洗腎）"
+      ],
+      "medicalService": [
+        "術後照顧",
+        "生活照顧",
+        "傷口照顧"
+      ],
+      "allowance": [
+        "喘息服務"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 3
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 6
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "晴朗日間照護中心",
+      "category": "日間照顧中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-09.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-09.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "台北市",
+      "region": "文山區",
+      "address": "台北市文山區木柵路",
+      "like": 7,
+      "comments": 14,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "特殊沐浴設備"
+        },
+        {
+          "name": "大傷口照顧"
+        }
+      ],
+      "description": "晴朗日間照護中心為長者提供安心的日間照護服務。我們設有溫馨的休息區,讓長者在日間舒適放鬆。",
+      "age": "60 歲以上",
+      "caringItem": [
+        "鼻胃管",
+        "導尿管",
+        "精神照護"
+      ],
+      "medicalService": [
+        "如廁訓練",
+        "延緩失能",
+        "營養評估"
+      ],
+      "allowance": [
+        "老人補助（低收、中低收）"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 3
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 6
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "晨曦安養日間中心",
+      "category": "日間照顧中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-11.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-11.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "台中市",
+      "region": "南屯區",
+      "address": "台中市南屯區五權西路",
+      "like": 4,
+      "comments": 8,
+      "services": [
+        {
+          "name": "失智照顧"
+        },
+        {
+          "name": "免外出復健"
+        },
+        {
+          "name": "個別化飲食"
+        }
+      ],
+      "description": "晨曦安養日間中心提供長者溫馨的日間照護環境。我們擁有設備齊全的護理站,隨時提供健康護理。",
+      "age": "65 歲以上",
+      "caringItem": [
+        "認知障礙（失智）",
+        "氣切管",
+        "氧氣"
+      ],
+      "medicalService": [
+        "術後照顧",
+        "生活照顧",
+        "傷口照顧"
+      ],
+      "allowance": [
+        "身心障礙",
+        "喘息服務"
+      ],
+      "roomCards": [
+        {
+          "id": 1,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-13.png?raw=true",
+          "roomType": "單人房",
+          "price": 40000,
+          "availableBeds": 3
+        },
+        {
+          "id": 2,
+          "imgUrl": "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-16.png",
+          "roomType": "三人房",
+          "price": 36000,
+          "availableBeds": 3
+        },
+        {
+          "id": 3,
+          "imgUrl": "https://github.com/Jack-Xiao-2024/Project_D01/blob/dev/assets/images/Building/B-16.png?raw=true",
+          "roomType": "六人房",
+          "price": 33000,
+          "availableBeds": 6
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "暖陽日間關懷中心",
+      "category": "日間照顧中心",
+      "images": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-12.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-B/IntroB-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-C/IntroC-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-D/IntroD-01.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Intro-E/IntroE-01.png"
+      ],
+      "thumbs": [
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-12.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-18.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-17.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-15.png",
+        "https://raw.githubusercontent.com/Jack-Xiao-2024/Project_D01/refs/heads/dev/assets/images/Building/B-13.png"
+      ],
+      "city": "高雄市",
+      "region": "鳳山區",
+      "address": "高雄市鳳山區中山路",
+      "like": 9,
+      "comments": 17,
+      "services": [
+        {
+          "name": "機構內門診"
+        },
+        {
+          "name": "門診接送"
+        },
+        {
+          "name": "特殊沐浴設備"
+        }
+      ],
+      "description": "暖陽日間關懷中心致力於為長者提供全方位的日間照護服務。我們設有專業護理區,確保每位長者的健康得到悉心照顧。",
+      "age": "60 歲以上",
+      "caringItem": [
+        "復健照護",
+        "腫瘤照護（癌症）",
+        "透析照護（洗腎）"
+      ],
+      "medicalService": [
+        "醫師巡診",
+        "鄰近醫院",
+        "藥師評估"
+      ],
+      "allowance": [
+        "老人補助（低收、中低收）"
+      ],
       "roomCards": [
         {
           "id": 1,
@@ -92,6 +932,14 @@
     {
       "productId": 1,
       "id": 1
+    },
+    {
+      "productId": 1,
+      "id": 2
+    },
+    {
+      "productId": 1,
+      "id": 3
     }
   ]
 }
