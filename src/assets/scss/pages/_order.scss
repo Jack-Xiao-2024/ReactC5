@@ -30,13 +30,13 @@ img{
         }
     }
 
-// checkbox-moble
-.checkbox-moble{
+// checkbox-mobile
+.checkbox-mobile{
     display:none;
     }
     
 @media(max-width:768px){
-        .checkbox-moble{
+        .checkbox-mobile{
             display: block;
         }
     }
