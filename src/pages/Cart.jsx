@@ -2,38 +2,20 @@ import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import BannerNoSearch from "../components/BannerNoSearch";
 import { useNavigate } from "react-router";
-const BASE_URL = import.meta.env.VITE_BASE_URL;
 import { UserContext } from "./FrontLayout";
+import getTokenFromCookie from "../assets/js/getTokenFromCookie";
 
-let token;
-let myUserId;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export default function Cart() {
   const [cartsData, setCartsData] = useState([]);
-  const { setIsLoginModalOpen } = useContext(UserContext);
-  const { setLoginModalMode } = useContext(UserContext);
-  const { isLogin } = useContext(UserContext); // 判斷是否登入
-  // const { setIsLogin } = useContext(UserContext);
-  // const { setUserName } = useContext(UserContext);
+  const { setIsLoginModalOpen, setLoginModalMode ,isLogin } = useContext(UserContext);// 判斷是否登入
+  const { token, myUserId } = getTokenFromCookie();
 
-  //取得cookie中的token和useId
-  const getToken = () => {
-    document.cookie = "myToken";
-    token = document.cookie.replace(
-      /(?:(?:^|.*;\s*)myToken\s*\=\s*([^;]*).*$)|^.*$/,
-      "$1"
-    );
-    myUserId = document.cookie.replace(
-      /(?:(?:^|.*;\s*)myUserId\s*\=\s*([^;]*).*$)|^.*$/,
-      "$1"
-    );
+  useEffect(() => {
     if (!token) {
       handleLoginModal();
     }
-  };
-
-  useEffect(() => {
-    getToken();
   }, []);
 
   //跳出登入視窗
@@ -60,7 +42,6 @@ export default function Cart() {
     };
     //如果登入成功則重新取得token，
     if (isLogin) {
-      getToken();
       fetchCartData();
     }
   }, [isLogin]);
@@ -108,7 +89,7 @@ export default function Cart() {
 
  // 清空購物車
  const handleDeleteAllClick = async () => {
-  getToken(); // 取得 userId
+  // getToken(); // 取得 userId
   if (!myUserId) {
     alert("用戶未登入，無法清空購物車");
     return;
@@ -148,8 +129,44 @@ export default function Cart() {
         {/* 背景色 */}
         <div className="order-content">
           <div className="container">
-            {/* order內容 */}
-            <div className="cart-content">
+            {cartsData.length === 0 ? 
+            // 購物車為空顯示提示訊息
+            (<div className="cart-content">
+                  {/* 全部刪除按鈕 */}
+                  <div className="d-flex justify-content-end px-2 mb-11">
+                    <button
+                      type="button"
+                      className="btn btn-outline-secondary-40 all-font"
+                      onClick={handleDeleteAllClick}
+                    >
+                      全部刪除
+                    </button>
+                  </div>
+                {/* 加入購物車資訊 */}
+                <div className="d-flex justify-content-center flex-column align-items-center mb-10 mb-md-14">
+                  <img className="img-fluid" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH9i4Wm47al7owhheYuyvI9kPffsFjgHdSNLtaL572LmdaxthXFGiKNn4sbYMaVNx9omD5HFbC6qkT6d4DJtvJpNJFjFwoTJHeOCU1MAP4H2P2nvHYUaBC7Q4d-rO3PKXvf564pdE9EBp6/s600/big_family_kurumaisu.png" alt="提示購物車為空" />
+                  <h5 className="fs-5 fs-md-4">
+                    立即預訂內沒有任何機構
+                  </h5>
+                  <p className="fs-7 fs-md-6">
+                    請加入機構到立即預訂
+                  </p>
+                </div>
+                {/* 頁籤尾頁 */}
+                <div className="d-flex justify-content-center mt-3">
+                  <div className="flex-column">
+                    <button
+                      type="button"
+                      className="btn next-btn next-btn-size fs-5 btn-primary-40"
+                      onClick={goToProductPage}
+                    >
+                      下一步
+                    </button>
+                  </div>
+                </div>
+            </div>) : 
+            // 購物車有資料顯示購物車內容
+            (<div className="cart-content">
                   {/* 全部刪除按鈕 */}
                   <div className="d-flex justify-content-end px-2 mb-11">
                     <button
@@ -316,7 +333,9 @@ export default function Cart() {
                     </button>
                   </div>
                 </div>
-
+            </div>
+            )}
+          </div>
               {/* ModalHeader提示框 */}
               <div
                 className="modal fade"
@@ -437,9 +456,6 @@ export default function Cart() {
                   </div>
                 </div>
               </div>
-
-            </div>
-          </div>
         </div>
       </div>
     </>
