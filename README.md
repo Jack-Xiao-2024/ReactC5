@@ -1,6 +1,7 @@
-# React 專題【長照好厝邊】
+# React 專案【長照好厝邊】
 
 ## 專案路徑
+
 -   [GitHub repo](https://github.com/Jack-Xiao-2024/ReactC5)
 -   [GitHub pages](https://jack-xiao-2024.github.io/ReactC5/)
 -   後台登入帳密：
@@ -8,6 +9,7 @@
     -   密碼：123123
 
 ## 程式專題作者
+
 -   [Jack](https://github.com/Jack-Xiao-2024)
 -   [Chris Chen](https://github.com/chrischen666)
 -   [Amy](https://github.com/amy6072698)
@@ -16,12 +18,16 @@
 ## 開發技術
 
 ### 前端技術
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)![React Router](https://img.shields.io/badge/react%20router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)![React Hook Form
+](https://img.shields.io/badge/react%20hook%20form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white)![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 ### 開發與版本控制
+
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ### 設計與協作工具
+
 ![Axios](https://img.shields.io/badge/Axios-671DDF?style=for-the-badge&logo=axios&logoColor=white)![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=miro&logoColor=white)![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 ---
@@ -140,10 +146,10 @@
 
 ---
 
-## 特別感謝 \- 專題指導
+## 特別感謝 \- 專案指導
 
 -   六角學院 / 洧杰校長 & 卡斯伯老師
--   專題教練 / hannah
+-   專案教練 / hannah
 -   六角學院 / 助教群
 
 ---
